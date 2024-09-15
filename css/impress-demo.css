@@ -94,13 +94,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: rgb(255, 255, 255);
 }
 
 /*
@@ -320,7 +314,7 @@ a:focus {
     font-size: 90px;
     line-height: 150px;
 }
-
+x
 /*
     'Tiny ideas' just need some tiny styling.
 */
@@ -329,6 +323,14 @@ a:focus {
     text-align: center;
     font-size: 37px;
     text-align: left;
+}
+
+#favorites img {
+    width: 70%;
+}
+
+#its img {
+    width: 70%;
 }
 
 /*
@@ -417,10 +419,13 @@ a:focus {
 #source {
     width: 700px;
     padding-bottom: 300px;
+    font-size: 30px;
 }
 
-#source q {
-    font-size: 60px;
+
+
+div {
+    color: rgb(255, 0, 0);
 }
 
 /*
