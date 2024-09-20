@@ -19,7 +19,6 @@
     Shall we begin?
 */
 
-
 /*
     We start with a good ol' reset.
     That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
@@ -28,59 +27,139 @@
     doesn't do any harm and gives us a fresh start.
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 li {
-    margin-left: 3ex;
+  margin-left: 3ex;
 }
 
 p {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*
@@ -91,40 +170,46 @@ table {
     want to leave anybody behind.
 */
 body {
-    font-family: 'PT Sans', sans-serif;
-    min-height: 740px;
+  font-family: "PT Sans", sans-serif;
+  min-height: 740px;
 
-    background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
 
 /*
     Now let's bring some text styles back ...
 */
-b, strong { font-weight: bold }
-i, em { font-style: italic }
+b,
+strong {
+  font-weight: bold;
+}
+i,
+em {
+  font-style: italic;
+}
 
 /*
     ... and give links a nice look.
 */
 a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(255,255,255,0.5);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(255, 255, 255, 0.5);
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 0.2em;
 
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 a:hover,
 a:focus {
-    background: rgba(255,255,255,1);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+  background: rgba(255, 255, 255, 1);
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
 }
 
 /*
@@ -140,24 +225,24 @@ a:focus {
 */
 
 .fallback-message {
-    font-family: sans-serif;
-    line-height: 1.3;
+  font-family: sans-serif;
+  line-height: 1.3;
 
-    width: 780px;
-    padding: 10px 10px 0;
-    margin: 20px auto;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
 
-    border: 1px solid #E4C652;
-    border-radius: 10px;
-    background: #EEDC94;
+  border: 1px solid #e4c652;
+  border-radius: 10px;
+  background: #eedc94;
 }
 
 .fallback-message p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .impress-supported .fallback-message {
-    display: none;
+  display: none;
 }
 
 /*
@@ -167,21 +252,21 @@ a:focus {
 */
 
 .step {
-    position: relative;
-    width: 900px;
-    padding: 40px;
-    margin: 20px auto;
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  margin: 20px auto;
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    -ms-box-sizing:     border-box;
-    -o-box-sizing:      border-box;
-    box-sizing:         border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 
-    font-family: 'pacifico';
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 1.5;
+  font-family: "pacifico";
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1.5;
 }
 
 /*
@@ -190,17 +275,19 @@ a:focus {
     Basically we remove the margin and make inactive steps a little bit transparent.
 */
 .impress-enabled .step {
-    margin: 0;
-    opacity: 0.3;
+  margin: 0;
+  opacity: 0.3;
 
-    -webkit-transition: opacity 1s;
-    -moz-transition:    opacity 1s;
-    -ms-transition:     opacity 1s;
-    -o-transition:      opacity 1s;
-    transition:         opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
-.impress-enabled .step.active { opacity: 1 }
+.impress-enabled .step.active {
+  opacity: 1;
+}
 
 /*
     These 'slide' step styles were heavily inspired by HTML5 Slides:
@@ -217,36 +304,36 @@ a:focus {
     will automatically scale the steps to fit the screen.
 */
 .slide {
-    display: block;
+  display: block;
 
-    width: 900px;
-    height: 700px;
-    padding: 40px 60px;
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
 
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
-    color: rgb(102, 102, 102);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -1px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
 }
 
 .slide q {
-    display: block;
-    font-size: 50px;
-    line-height: 72px;
+  display: block;
+  font-size: 50px;
+  line-height: 72px;
 
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .slide strong {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 /*
@@ -261,46 +348,46 @@ a:focus {
 */
 
 #title {
-    padding: 0;
+  padding: 0;
 }
 
 #title {
-    font-size: 32px;
-    position: absolute;
-    top: -0.5em;
-    left: 1.5em;
+  font-size: 32px;
+  position: absolute;
+  top: -0.5em;
+  left: 1.5em;
 
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
+  -webkit-transform: translateZ(20px);
+  -moz-transform: translateZ(20px);
+  -ms-transform: translateZ(20px);
+  -o-transform: translateZ(20px);
+  transform: translateZ(20px);
 }
 
 #title h1 {
-    font-size: 128px;
+  font-size: 128px;
 
-    -webkit-transform: translateZ(50px);
-    -moz-transform:    translateZ(50px);
-    -ms-transform:     translateZ(50px);
-    -o-transform:      translateZ(50px);
-    transform:         translateZ(50px);
+  -webkit-transform: translateZ(50px);
+  -moz-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  -o-transform: translateZ(50px);
+  transform: translateZ(50px);
 }
 
 #title .footnote {
-    font-size: 32px;
+  font-size: 32px;
 }
 
-#dads_note{
-    font-size: 32px
+#dads_note {
+  font-size: 32px;
 }
 
-#moms_note{
-    font-size: 32px
+#moms_note {
+  font-size: 32px;
 }
 
-#abbys_note{
-    font-size: 32px
+#abbys_note {
+  font-size: 32px;
 }
 
 /*
@@ -310,57 +397,59 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 #big {
-    width: 600px;
-    text-align: center;
-    font-size: 60px;
-    line-height: 1;
+  width: 600px;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1;
 }
 
 #big strong,
 #big b {
-    display: block;
-    font-size: 250px;
-    line-height: 250px;
+  display: block;
+  font-size: 250px;
+  line-height: 250px;
 }
 
 #big .thoughts {
-    font-size: 90px;
-    line-height: 150px;
+  font-size: 90px;
+  line-height: 150px;
 }
 
 /*
     'Tiny ideas' just need some tiny styling.
 */
 #tiny {
-    opacity: 0;
-    width: 500px;
-    text-align: center;
-    font-size: 37px;
-    text-align: left;
+  opacity: 0;
+  width: 500px;
+  text-align: center;
+  font-size: 37px;
+  text-align: left;
 }
 
 #tiny.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 #favorites img {
-    width: 70%;
+  width: 70%;
 }
 
 #its img {
-    width: 70%;
+  width: 70%;
 }
 
 /*
     This stephas some animated text ... 
 */
-#family { width: 500px }
+#family {
+  width: 500px;
+}
 
 #family img {
-    position: absolute;
-    left: 400px;
-    top: 55px;
-    width: 60%;
+  position: absolute;
+  left: 400px;
+  top: 55px;
+  width: 60%;
 }
 
 /*
@@ -368,12 +457,12 @@ a:focus {
     transition duration to 0.5s ...
 */
 #family b {
-    display: inline-block;
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*
@@ -381,45 +470,45 @@ a:focus {
     `present` class ...
 */
 #family.present .positioning {
-    -webkit-transform: translateY(-10px);
-    -moz-transform:    translateY(-10px);
-    -ms-transform:     translateY(-10px);
-    -o-transform:      translateY(-10px);
-    transform:         translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /*
     ... 'rotating' to rotate a quarter of a second later ...
 */
 #family.present .rotating {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform:    rotate(-10deg);
-    -ms-transform:     rotate(-10deg);
-    -o-transform:      rotate(-10deg);
-    transform:         rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay:    0.25s;
-    -ms-transition-delay:     0.25s;
-    -o-transition-delay:      0.25s;
-    transition-delay:         0.25s;
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  -ms-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 /*
     ... and 'scaling' to scale down after another quarter of a second.
 */
 #family.present .scaling {
-    -webkit-transform: scale(0.7);
-    -moz-transform:    scale(0.7);
-    -ms-transform:     scale(0.7);
-    -o-transform:      scale(0.7);
-    transform:         scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
 
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay:    0.5s;
-    -ms-transition-delay:     0.5s;
-    -o-transition-delay:      0.5s;
-    transition-delay:         0.5s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 /*
@@ -427,8 +516,8 @@ a:focus {
 */
 
 #exciting {
-    width: 600px;
-    font-size: 20px;
+  width: 600px;
+  font-size: 20px;
 }
 
 /*
@@ -442,15 +531,13 @@ a:focus {
     Just make sure you don't blindly copy this approach.
 */
 #source {
-    width: 700px;
-    padding-bottom: 300px;
-    font-size: 30px;
+  width: 700px;
+  padding-bottom: 300px;
+  font-size: 30px;
 }
 
-
-
 div {
-    color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 /*
@@ -462,26 +549,25 @@ div {
     which behaviour is correct as 3D transforms spec is not very clear about it.
 */
 #its-in-3d p {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
-    -ms-transform-style:     preserve-3d;
-    -o-transform-style:      preserve-3d;
-    transform-style:         preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d; /* Y U need this Firefox?! */
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
-
 #its-in-3d img {
-    width: 20%;
+  width: 20%;
 }
 
 #small {
-    position: absolute;
-    top: 259px
+  position: absolute;
+  top: 259px;
 }
 
 #sisidsus {
-    font-size: 20px;
-    max-width: 500px;
+  font-size: 20px;
+  max-width: 500px;
 }
 
 /*
@@ -492,77 +578,77 @@ div {
 */
 #its-in-3d span,
 #its-in-3d b {
-    display: inline-block;
-    -webkit-transform: translateZ(40px);
-    -moz-transform:    translateZ(40px);
-    -ms-transform:     translateZ(40px);
-    -o-transform:      translateZ(40px);
-     transform:        translateZ(40px);
+  display: inline-block;
+  -webkit-transform: translateZ(40px);
+  -moz-transform: translateZ(40px);
+  -ms-transform: translateZ(40px);
+  -o-transform: translateZ(40px);
+  transform: translateZ(40px);
 
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #its-in-3d .have {
-    -webkit-transform: translateZ(-40px);
-    -moz-transform:    translateZ(-40px);
-    -ms-transform:     translateZ(-40px);
-    -o-transform:      translateZ(-40px);
-    transform:         translateZ(-40px);
+  -webkit-transform: translateZ(-40px);
+  -moz-transform: translateZ(-40px);
+  -ms-transform: translateZ(-40px);
+  -o-transform: translateZ(-40px);
+  transform: translateZ(-40px);
 }
 
 #its-in-3d .you {
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
+  -webkit-transform: translateZ(20px);
+  -moz-transform: translateZ(20px);
+  -ms-transform: translateZ(20px);
+  -o-transform: translateZ(20px);
+  transform: translateZ(20px);
 }
 
 #its-in-3d .noticed {
-    -webkit-transform: translateZ(-40px);
-    -moz-transform:    translateZ(-40px);
-    -ms-transform:     translateZ(-40px);
-    -o-transform:      translateZ(-40px);
-    transform:         translateZ(-40px);
+  -webkit-transform: translateZ(-40px);
+  -moz-transform: translateZ(-40px);
+  -ms-transform: translateZ(-40px);
+  -o-transform: translateZ(-40px);
+  transform: translateZ(-40px);
 }
 
 #its-in-3d .its {
-    -webkit-transform: translateZ(60px);
-    -moz-transform:    translateZ(60px);
-    -ms-transform:     translateZ(60px);
-    -o-transform:      translateZ(60px);
-    transform:         translateZ(60px);
+  -webkit-transform: translateZ(60px);
+  -moz-transform: translateZ(60px);
+  -ms-transform: translateZ(60px);
+  -o-transform: translateZ(60px);
+  transform: translateZ(60px);
 }
 
 #its-in-3d .in {
-    -webkit-transform: translateZ(-10px);
-    -moz-transform:    translateZ(-10px);
-    -ms-transform:     translateZ(-10px);
-    -o-transform:      translateZ(-10px);
-    transform:         translateZ(-10px);
+  -webkit-transform: translateZ(-10px);
+  -moz-transform: translateZ(-10px);
+  -ms-transform: translateZ(-10px);
+  -o-transform: translateZ(-10px);
+  transform: translateZ(-10px);
 }
 
 #its-in-3d .footnote {
-    font-size: 32px;
+  font-size: 32px;
 
-    -webkit-transform: translateZ(-10px);
-    -moz-transform:    translateZ(-10px);
-    -ms-transform:     translateZ(-10px);
-    -o-transform:      translateZ(-10px);
-    transform:         translateZ(-10px);
+  -webkit-transform: translateZ(-10px);
+  -moz-transform: translateZ(-10px);
+  -ms-transform: translateZ(-10px);
+  -o-transform: translateZ(-10px);
+  transform: translateZ(-10px);
 }
 
 #its-in-3d.present span,
 #its-in-3d.present b {
-    -webkit-transform: translateZ(0px);
-    -moz-transform:    translateZ(0px);
-    -ms-transform:     translateZ(0px);
-    -o-transform:      translateZ(0px);
-    transform:         translateZ(0px);
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 /*
@@ -571,15 +657,17 @@ div {
     to be able to click on other steps.
 
 */
-#overview { display: none }
+#overview {
+  display: none;
+}
 
 /*
     We also make other steps visible and give them a pointer cursor using the
     `impress-on-` class.
 */
 .impress-on-overview .step {
-    opacity: 1;
-    cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }
 
 /*
@@ -624,83 +712,39 @@ div {
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
 
-.hint {
-    /*
-        We hide the hint until presentation is started and from browsers not supporting
-        impress.js, as they will have a linear scrollable view ...
-    */
-    display: none;
-
-    /*
-        ... and give it some fixed position and nice styles.
-    */
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 200px;
-
-    background: rgba(0,0,0,0.5);
-    color: #EEE;
-    text-align: center;
-
-    font-size: 50px;
-    padding: 20px;
-
-    z-index: 100;
-
-    /*
-        By default we don't want the hint to be visible, so we make it transparent ...
-    */
-    opacity: 0;
-
-    /*
-        ... and position it below the bottom of the screen (relative to it's fixed position)
-    */
-    -webkit-transform: translateY(400px);
-    -moz-transform:    translateY(400px);
-    -ms-transform:     translateY(400px);
-    -o-transform:      translateY(400px);
-    transform:         translateY(400px);
-
-    /*
-        Now let's imagine that the hint is visible and we want to fade it out and move out
-        of the screen.
-
-        So we define the transition on the opacity property with 1s duration and another
-        transition on transform property delayed by 1s so it will happen after the fade out
-        on opacity finished.
-
-        This way user will not see the hint moving down.
-    */
-    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
-    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
-    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-    transition:         opacity 1s,         transform 0.5s 1s;
+#hint {
+  font-size: 0.6em;
+  margin-top: 6em;
+  text-align: right;
+  font-style: normal;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
 }
 
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-.impress-enabled .hint { display: block }
+.impress-enabled .hint {
+  display: block;
+}
 
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
 .impress-on-bored .hint {
-    /*
+  /*
         We remove the transparency and position the hint in its default fixed
         position.
     */
-    opacity: 1;
+  opacity: 1;
 
-    -webkit-transform: translateY(0px);
-    -moz-transform:    translateY(0px);
-    -ms-transform:     translateY(0px);
-    -o-transform:      translateY(0px);
-    transform:         translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
 
-    /*
+  /*
         Now for fade in transition we have the oposite situation from the one
         above.
 
@@ -708,11 +752,11 @@ div {
         into its correct position and after that we fade it in with opacity
         transition.
     */
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+  -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+  -moz-transition: opacity 1s 5s, -moz-transform 0.5s 4.5s;
+  -ms-transition: opacity 1s 5s, -ms-transform 0.5s 4.5s;
+  -o-transition: opacity 1s 5s, -o-transform 0.5s 4.5s;
+  transition: opacity 1s 5s, transform 0.5s 4.5s;
 }
 
 /*
